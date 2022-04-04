@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Calculadora</title>
+        <link rel="stylesheet" type="text/css" href="estilo3.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Palette+Mosaic&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 class="Titulo">Calculadora de 4 operaciones</h1>
+        </header>
+        <form action="" class="Interfaz-calculo">
+            <div class="Datos-entrada">
+                <h3>Número 1:</h3>
+                <input type="text" name="numero-1" class="entrada" placeholder="Inserte un Número aquí">
+                <h3>Número 2:</h3>
+                <input type="text" name="numero-2" class="entrada" placeholder="Inserte un Número aquí">
+            </div>
+            <div class="Caja-Boton">
+                <select name="Operacion">
+                    <option>Sumar</option>
+                    <option>Restar</option>
+                    <option>Multiplicar</option>
+                    <option>Dividir</option>
+                </select>
+                <input type="button" value="Calcular" class="Boton">
+            </div>
+            <div class="Caja-Resultado">
+                <h3>Resultado:</h3>
+                <input type="text" class="Resultado" placeholder="Resultado">
+            </div>
+        </form>
+        <footer class="Pie-pagina">
+            Elaborado por Antony Carbajal - Marzo 2022
+        </footer>
+        <script src="calcula.js"></script>
+    </body>
+</html>

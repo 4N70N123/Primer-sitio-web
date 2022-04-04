@@ -1,0 +1,102 @@
+* {
+    background-color: #F0F0F0;
+}
+.Titulo {
+    font-size: 48px;
+    font-family: Lobster, cursive;
+    color: #002d29;
+}
+.Explain{
+    font-size: 24px;
+}
+:root{
+    --primer-color: #282828;
+    --segundo-color: #000000;
+    --tercer-color: #e0dad2;
+    --cuarto-color: #FB8983;
+
+
+    --dt-padding: 12px;
+    --dt-padding-s: 6px;
+    --dt-padding-xs: 2px;
+
+    --dt-borde-radio: 5px;
+
+    --color-fondo-tabla: var(--segundo-color);
+    --color-bordes: var(--tercer-color);
+    --color-area: var(--cuarto-color);
+    --color-subareas: var(--cuarto-color);
+    --color-texto-contenido: var(--tercer-color);
+}
+h3{
+    font-size: 25px;
+}
+div{
+    display: inline-block;
+}
+.Interfaz-calculo {
+    /*border: solid 2px rgba(255, 70, 70);*/
+    position: relative;
+}
+.Datos-entrada{
+    position: relative;
+    top: 10px;
+    padding: 5px;
+    left: 30px;
+    /*border: solid 2px rgba(255, 70, 70);*/
+}
+.entrada{
+    font-size: 20px;
+    padding: 5px;
+    display: inline-block;
+    border-radius: var(--border-radius);
+}
+input::placeholder{
+    font-size: 18px;
+    position: relative;
+    left: 8px;
+}
+.Caja-Boton{
+    size: 257px;
+    padding: 30px;
+    position: relative;
+    bottom: 90px;
+    left: 50px;
+    /*border: solid 2px rgba(255, 70, 70);*/
+    
+}
+.Boton{
+    font-size: 30px;
+    padding: 5px;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+}
+.Caja-Resultado{
+    /*border: solid 2px rgba(255, 70, 70);*/
+    font-size: 40px;
+    padding: 5px;
+    position: relative;
+    left: 70px;
+    bottom: 50px;
+}
+.Resultado {
+    font-size: 20px;
+    padding: 5px;
+}
+.Resultado::placeholder{
+    font-size: 20px;
+    position: relative;
+    left: 8px;
+}
+.Pie-pagina{
+    font-size: 20px;
+    color: #707c83;
+    text-align: center;
+    border-top: solid 2px black;
+    margin: 50px;
+    padding: 10px;
+}
+select{
+    font-size: 15px;
+}

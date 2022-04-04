@@ -1,0 +1,98 @@
+* {
+    background-color: #F0F0F0;
+}
+.Titulo {
+    font-size: 48px;
+    font-family: Lobster, cursive;
+    color: #002d29;
+}
+.Explain{
+    font-size: 24px;
+}
+:root{
+    --primer-color: #282828;
+    --segundo-color: #98CEF4;
+    --tercer-color: #255273;
+    --cuarto-color: #255273;
+
+
+    --dt-padding: 12px;
+    --dt-padding-s: 6px;
+    --dt-padding-xs: 2px;
+
+    --dt-borde-radio: 20px;
+
+    --color-fondo-tabla: var(--segundo-color);
+    --color-bordes: var(--tercer-color);
+    --color-area: var(--cuarto-color);
+    --color-subareas: var(--cuarto-color);
+    --color-texto-contenido: var(--tercer-color);
+}
+.Table-container{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--color-fondo-tabla);
+    border-radius: var(--dt-borde-radio);
+    color: var(--color-subareas);
+    width: 900px;
+    margin: 0 auto;
+    font-size: 15px;
+}
+.Table-container th{
+    font-size: 24px;
+}
+.Table-container .Datatable{
+    border-collapse: collapse;
+    border-radius: var(--dt-borde-radio);
+    width: 100%;
+}
+.Table-container .Datatable, 
+.Table-container .Datatable th,
+.Table-container .Datatable td{
+    padding: var(--dt-padding) var(--dt-padding);
+}
+.Table-container .Datatable .Area{
+    font-size: 48px;
+    color: var(--color-area);
+    border-bottom: solid 2.5px var(--color-bordes);
+    background-color: var(--color-fondo-tabla);
+    text-align: center;
+    
+}
+.Table-container .Datatable td{
+    border-bottom: solid 2px var(--color-bordes);
+    background-color: var(--color-fondo-tabla);
+    color: var(--color-texto-contenido);
+}
+.Table-container .Datatable th{
+    font-weight: bolder;
+    text-align: left;
+    border-bottom: solid 1px var(--color-bordes);
+    background-color: var(--color-fondo-tabla);
+    color: var(--color-subareas);
+}
+.Pie-pagina{
+    font-size: 20px;
+    color: #707c83;
+    text-align: center;
+    border-top: solid 2px black;
+    margin: 50px;
+    padding: 10px;
+}
+img{
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    background-color: var(--color-fondo-tabla);
+    left: 0px;
+    transition: all 1s;
+}
+td:hover > img {
+    position: relative;
+    left: 60px;
+}
+.Titmenu{
+    font-size: 25px;
+}
+.Listamenu{
+    font-size: 20px;
+}
