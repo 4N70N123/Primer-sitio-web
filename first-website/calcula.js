@@ -1,4 +1,6 @@
-function calc(){
+    
+    var hola = prompt("Este archivo sí está enlazado");
+    
     var numero1 = document.getElementByName("numero-1");
     var numero2 = document.getElementByName("numero-2");
     var calcular = document.getElementByName("boton");
@@ -7,6 +9,8 @@ function calc(){
     var res;
     var a = numero1.textContent;
     var b = numero2.textContent;
+
+    
 
     calcular.onclick = function(e) {
         switch(operacion){
@@ -25,4 +29,3 @@ function calc(){
         }
         resultado.textContent = res;
     }
-}
