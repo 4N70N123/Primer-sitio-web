@@ -1,31 +1,34 @@
     
-    var hola = prompt("Este archivo sí está enlazado");
-    
-    var numero1 = document.getElementByName("numero-1");
-    var numero2 = document.getElementByName("numero-2");
-    var calcular = document.getElementByName("boton");
-    var resultado = document.getElementByName("Resultado");
-    var operacion = document.getElementByName("operacion");
-    var res;
-    var a = numero1.textContent;
-    var b = numero2.textContent;
+    // Para obtener el valor de un elemento por su clase se usa .querySelector(".nombreDeLaClase")
 
-    
 
-    calcular.onclick = function(e) {
-        switch(operacion){
+    var calcular = document.getElementById("calculador");
+ 
+    calcular.addEventListener('click',sumar);
+
+    function sumar() {
+        let numero1 = document.getElementById("num1").value;
+        let numero2 = document.getElementById("num2").value;
+        let a = parseFloat(numero1);
+        let b = parseFloat(numero2);
+        let resultado = document.getElementById("Valorfinal");
+        let operacion = document.getElementById("opera");
+        let res;
+        let opera = `${operacion.value}`;
+        switch(opera){
             case "Sumar":
-                res = parseFloat(a) + parseFloat(b);
+                res = a+b;
             break;
             case "Restar":
-                res = parseFloat(a) - parseFloat(b);
+                res = a-b;
             break;
             case "Multiplicar":
-                res = parseFloat(a) * parseFloat(b);
+                res = a*b;
             break;
             case "Dividir":
-                res = parseFloat(a) / parseFloat(b);
+                res = a/b;
             break;
         }
-        resultado.textContent = res;
+        resultado.value=Math.round(res*100)/100;
     }
+    
