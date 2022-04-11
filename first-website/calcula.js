@@ -29,6 +29,6 @@
                 res = a/b;
             break;
         }
-        resultado.value=Math.round(res*100)/100;
+        resultado.value=Math.round(res*1000)/1000;
     }
     
