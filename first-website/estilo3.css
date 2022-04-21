@@ -14,13 +14,15 @@
     --segundo-color: #000000;
     --tercer-color: #e0dad2;
     --cuarto-color: #FB8983;
+    --fondo-resultado: #e5f7e5;
+    --fondo-entradas: #e7f2f8;
 
 
     --dt-padding: 12px;
     --dt-padding-s: 6px;
     --dt-padding-xs: 2px;
 
-    --dt-borde-radio: 5px;
+    --dt-borde-radio: 6px;
 
     --color-fondo-tabla: var(--segundo-color);
     --color-bordes: var(--tercer-color);
@@ -49,7 +51,12 @@ div{
     font-size: 20px;
     padding: 5px;
     display: inline-block;
-    border-radius: var(--border-radius);
+    border: solid 2px #080808;
+    border-radius: var(--dt-borde-radio);
+    background-color:var(--fondo-entradas)
+}
+.entrada:hover{
+    box-shadow: inset var(--fondo-entradas) 2px;
 }
 input::placeholder{
     font-size: 18px;
@@ -60,17 +67,21 @@ input::placeholder{
     size: 257px;
     padding: 30px;
     position: relative;
-    bottom: 90px;
+    bottom: 50px;
     left: 50px;
     /*border: solid 2px rgba(255, 70, 70);*/
     
 }
 .Boton{
     font-size: 30px;
+    color: white;
+    background-color:black;
     padding: 5px;
     position: relative;
     margin: auto;
     cursor: pointer;
+    border-radius: var(--dt-borde-radio);
+    box-shadow: inset white 0.7px 0.6px;
 }
 .Caja-Resultado{
     /*border: solid 2px rgba(255, 70, 70);*/
@@ -83,6 +94,9 @@ input::placeholder{
 .Resultado {
     font-size: 20px;
     padding: 5px;
+    background-color: var(--fondo-resultado);
+    border: solid 2px #080808;
+    border-radius: var(--dt-borde-radio);
 }
 .Resultado::placeholder{
     font-size: 20px;

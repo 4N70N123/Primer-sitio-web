@@ -2,6 +2,7 @@
 <html lang="es">
     <head>
         <title>Calculadora</title>
+        <link rel="icon" href="https://media.istockphoto.com/vectors/calculator-isolated-on-a-colored-background-vector-id544462430?k=20&m=544462430&s=612x612&w=0&h=iTSj0mGztBISBiU18BxAuFufsQfEDAVp6P9zMbOXM44=">
         <link rel="stylesheet" type="text/css" href="estilo3.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,22 +16,22 @@
         <form action="" class="Interfaz-calculo">
             <div class="Datos-entrada">
                 <h3>Número 1:</h3>
-                <input type="text" name="numero-1" class="entrada" placeholder="Inserte un Número aquí">
+                <input type="text" name="numero-1" class="entrada" placeholder="Inserte un Número aquí" id="num1">
                 <h3>Número 2:</h3>
-                <input type="text" name="numero-2" class="entrada" placeholder="Inserte un Número aquí">
+                <input type="text" name="numero-2" class="entrada" placeholder="Inserte un Número aquí" id="num2">
             </div>
             <div class="Caja-Boton">
-                <select name="Operacion">
+                <select name="Operacion" id="opera">
                     <option>Sumar</option>
                     <option>Restar</option>
                     <option>Multiplicar</option>
                     <option>Dividir</option>
                 </select>
-                <input type="button" value="Calcular" class="Boton">
+                <input type="button" value="Calcular" class="Boton" id="calculador">
             </div>
             <div class="Caja-Resultado">
                 <h3>Resultado:</h3>
-                <input type="text" class="Resultado" placeholder="Resultado">
+                <input type="text" class="Resultado" id="Valorfinal" placeholder="Resultado">
             </div>
         </form>
         <footer class="Pie-pagina">
